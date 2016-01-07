@@ -1,15 +1,3 @@
-/*
-
-HI SEAN. 
-
-
-
-YOU NEED TO MAKE THIS WIRELESS FAM.
-
-DO IT.
-
-*/
-
 
 // Arduino Wire library is required if I2Cdev I2CDEV_ARDUINO_WIRE implementation
 // is used in I2Cdev.h
