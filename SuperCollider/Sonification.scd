@@ -1,5 +1,6 @@
-n = NetAddr.new("127.0.0.1",12000)
+//StageLimiter requires BatLib Quark
 
+//To use:
 //execute this
 (
 (
