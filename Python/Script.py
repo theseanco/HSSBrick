@@ -19,12 +19,12 @@ c.connect(('127.0.0.1', 12000))
 oscmsg = OSC.OSCMessage()
 
 # setup serial communication
-# port = input('port: ')
-# baudrate = input('baudrate: ')
-# ser = serial.Serial(port,baudrate)
+port = input('port: ')
+baudrate = input('baudrate: ')
+ser = serial.Serial(port, baudrate)
 
 # for testing
-ser = serial.Serial('/dev/ttyACM0', 115200)
+# ser = serial.Serial('/dev/ttyACM0', 115200)
 
 # regex string formatting pattern to check if serial has read correctly
 pattern = re.compile("^(?:[0-9]{1,3}\.){3}[0-9]{1,3}..[0-9]{1,4}")
