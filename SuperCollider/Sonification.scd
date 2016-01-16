@@ -8,7 +8,7 @@ SynthDef(\sinblip,
 	{
 		arg freq = 8000, b1 = 1.01, b2 = 0.99, b3 = 1.02;
 		var sig, env;
-		env = EnvGen.ar(Env.perc(0.01,Rand(0.1,0.5)),1,1,0,1,2);
+		env = EnvGen.ar(Env.perc(0.01,Rand(0.05,0.3)),1,1,0,1,2);
 		sig = Splay.ar(SinOsc.ar([freq,freq*b1,freq*b2,freq*b3]+(env*Rand(-500,2000)),0,0.6));
 		sig = sig * env;
 		Out.ar(0,sig);
@@ -52,4 +52,6 @@ StageLimiter.activate;
 	~t3 = rrand(0.9,1.1);
 	~t4 = rrand(0.9,1.1)},'/scnetinfo');
 )
+
+Synth.new(\sinthunk)
 
